@@ -1,0 +1,180 @@
+Image #:  1 
+
+Filter Score:  31 
+
+prior 0.18044     0.81956
+hyp1 0.0039284     0.37876     0.61731
+hyp2 0.40402     0.33913     0.25685
+data 0  3  0 
+posterior 0.23474     0.76526
+
+prior_weaver: 0.26296
+prior_pval: 0.041769
+prior_pred: 0.041769
+posterior_weaver: 0.2675
+posterior_pvalue: 0.042602
+posterior_pred: 0.042602
+
+
+Image #:  2 
+
+Filter Score:  20 
+
+prior 0.34951     0.65049
+hyp1 0.44607    0.081558     0.47237
+hyp2 0.28427     0.60431     0.11142
+data 0  1  2 
+posterior 0.56586     0.43414
+
+prior_weaver: 0.21215
+prior_pval: 0.033721
+prior_pred: 0.033721
+posterior_weaver: 0.25201
+posterior_pvalue: 0.040663
+posterior_pred: 0.040663
+
+
+Image #:  3 
+
+Filter Score:  8 
+
+prior 0.62604     0.37396
+hyp1 0.39488     0.30562     0.29951
+hyp2 0.41033     0.37796     0.21171
+data 0  0  3 
+posterior 0.82577     0.17423
+
+prior_weaver: 0.13515
+prior_pval: 0.020368
+prior_pred: 0.020368
+posterior_weaver: 0.15537
+posterior_pvalue: 0.023839
+posterior_pred: 0.023839
+
+
+Image #:  4 
+
+Filter Score:  0 
+
+prior 0.98642    0.013584
+hyp1 0.49962     0.41163     0.08875
+hyp2 0.47137     0.36965     0.15899
+data 0  0  3 
+posterior 0.92663    0.073366
+
+prior_weaver: 0.0037469
+prior_pval: 0.00074414
+prior_pred: 0.00074414
+posterior_weaver: 0.0048212
+posterior_pvalue: 0.0009426
+posterior_pred: 0.0009426
+
+
+Image #:  5 
+
+Filter Score:  -1 
+
+prior 0.2721      0.7279
+hyp1 0.93317     0.06646  0.00037309
+hyp2 0.7892     0.19952    0.011284
+data 0  0  2 
+posterior 0.00040848     0.99959
+
+prior_weaver: 0.00016955
+prior_pval: 9.272e-05
+prior_pred: 9.272e-05
+posterior_weaver: 0.00026016
+posterior_pvalue: 0.00012728
+posterior_pred: 0.00012728
+
+
+Image #:  6 
+
+Filter Score:  -2 
+
+prior 0.84869     0.15131
+hyp1 0.54799     0.34038     0.11163
+hyp2 0.0022255     0.41945     0.57833
+data 1  0  2 
+posterior 0.98094    0.019063
+
+prior_weaver: 0.10754
+prior_pval: 0.017724
+prior_pred: 0.017724
+posterior_weaver: 0.10032
+posterior_pvalue: 0.02519
+posterior_pred: 0.020138
+
+
+Image #:  7 
+
+Filter Score:  -2 
+
+prior 0.5724      0.4276
+hyp1 0.20412    0.053613     0.74226
+hyp2 0.66393    0.007434     0.32864
+data 1  2  0 
+posterior 0.95537    0.044631
+
+prior_weaver: 0.0047451
+prior_pval: 0.001143
+prior_pred: 0.0010546
+posterior_weaver: 0.0058691
+posterior_pvalue: 0.0018338
+posterior_pred: 0.0016865
+
+
+Image #:  8 
+
+Filter Score:  -2 
+
+prior 0.56884     0.43116
+hyp1 0.62931     0.36083   0.0098634
+hyp2 0.0080577     0.97531    0.016629
+data 0  0  2 
+posterior 0.31701     0.68299
+
+prior_weaver: 0.0004903
+prior_pval: 0.00017457
+prior_pred: 0.00017457
+posterior_weaver: 0.00042417
+posterior_pvalue: 0.0002197
+posterior_pred: 0.0002197
+
+
+Image #:  9 
+
+Filter Score:  -3 
+
+prior 0.47061     0.52939
+hyp1 0.8358      0.0751      0.0891
+hyp2 0.85497    0.046754    0.098278
+data 0  3  0 
+posterior 0.78651     0.21349
+
+prior_weaver: 0.00059536
+prior_pval: 0.00025344
+prior_pred: 0.00025344
+posterior_weaver: 0.00086244
+posterior_pvalue: 0.00035495
+posterior_pred: 0.00035495
+
+
+Image #:  10 
+
+Filter Score:  -3 
+
+prior 0.74224     0.25776
+hyp1 0.52428      0.3521     0.12363
+hyp2 0.36223  0.00039679     0.63737
+data 0  1  2 
+posterior 0.9897    0.010295
+
+prior_weaver: 0.081748
+prior_pval: 0.012107
+prior_pred: 0.012107
+posterior_weaver: 0.083959
+posterior_pvalue: 0.020519
+posterior_pred: 0.015983
+
+

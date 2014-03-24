@@ -1,0 +1,61 @@
+%prints details about interesting cases
+
+for q = 1:include_n_best
+    %open file
+    fid = fopen(out_fnames{case_filter},'a');
+    
+    %content
+    fprintf(fid, '%s %s \n\n' ,'Image #: ', num2str(q) );
+    
+    if nhyp >= 2
+        fprintf(fid, '%s %s\n', 'prior', num2str(prior_array{q}));
+    end;
+    hyps = hypothesis_array{q};
+    for g = 1:nhyp
+        fprintf(fid, '%s%s %s\n' , 'hyp', num2str(g), num2str(hyps(g,:)));
+    end;
+    fprintf(fid, '%s %s \n' ,'data', num2str(histc(data',1:ncolor)) );
+    if nhyp >= 2
+        fprintf(fid, '%s %s\n\n' ,'posterior', num2str(posterior_array));
+    end;
+    
+    fprintf(fid, '%s %s\n' ,'prior_weaver:', num2str(prior_wsurp(i)));
+    fprintf(fid, '%s %s\n' ,'prior_pval:', num2str(prior_pval(i)));
+    fprintf(fid, '%s %s\n' ,'prior_pred:', num2str(priorsurp(i)));
+    if nhyp >=2
+        fprintf(fid, '%s %s\n' ,'posterior_weaver:', num2str(post_wsurp(i)));
+        fprintf(fid, '%s %s\n' ,'posterior_pvalue:', num2str(post_pval(i)));
+        fprintf(fid, '%s %s' ,'posterior_pred:', num2str(postsurp(i)));
+    end;
+    fprintf(fid, '\n\n\n');
+    fclose(fid);
+    
+    %print distribution as image
+    figure('visible','off');
+    if nhyp > 1
+        a = sort(prior_p_outcomes,1,'descend');
+        hb = bar(a);
+        v = plus_minus_boolean(a, prior_p_observed);
+        set(get(hb,'children'),'cdata', v );
+        colormap([0 0 1; 1 0 0]);
+        filename = strcat(int2str(i),'prior_dist','.png');
+        print ('-dpng', '-r100', filename);
+        
+        a = sort(post_p_outcomes,1,'descend');
+        hb = bar(a);
+        v = plus_minus_boolean(a, post_p_observed);
+        set(get(hb,'children'),'cdata', v );
+        colormap([0 0 1; 1 0 0]);
+        filename = strcat(int2str(i),'post_dist','.png');
+        print ('-dpng', '-r100', filename);
+    else
+        a = sort(prior_p_outcomes,1,'descend');
+        hb = bar(a);
+        v = plus_minus_boolean(a, prior_p_observed);
+        set(get(hb,'children'),'cdata', v );
+        colormap([0 0 1; 1 0 0]);
+        filename = strcat(int2str(i),'dist','.png');
+        print ('-dpng', '-r100', filename);
+    end;
+    
+end;
